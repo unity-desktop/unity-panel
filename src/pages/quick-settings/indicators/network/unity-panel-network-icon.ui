@@ -8,6 +8,9 @@
     <property name="child">
       <object class="GtkImage">
         <property name="icon-name" bind-source="network" bind-property="icon-name" bind-flags="sync-create"/>
+        <style>
+          <class name="panel-icon"/>
+        </style>
       </object>
     </property>
   </template>

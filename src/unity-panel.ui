@@ -18,7 +18,10 @@
               <object class="GtkBox">
                 <property name="spacing">6</property>
                 <child>
-                  <object class="UnityPanelCalendarLabel"/>
+                  <object class="UnityPanelCalendarLabel">
+                    <property name="margin-start">6</property>
+                    <property name="margin-end">6</property>
+                  </object>
                 </child>
                 <child>
                   <object class="UnityPanelNetworkIcon"/>

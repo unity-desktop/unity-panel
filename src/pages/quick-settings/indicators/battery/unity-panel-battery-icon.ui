@@ -7,7 +7,11 @@
       <object class="GtkBox">
         <property name="spacing">6</property>
         <child>
-          <object class="GtkImage" id="icon"/>
+          <object class="GtkImage" id="icon">
+            <style>
+              <class name="panel-icon"/>
+            </style>
+          </object>
         </child>
         <child>
           <object class="GtkLabel" id="label">

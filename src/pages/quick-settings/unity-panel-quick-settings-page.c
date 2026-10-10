@@ -10,6 +10,7 @@
 #include "unity-panel-battery-icon-private.h"
 #include "unity-panel-bluetooth-tile-private.h"
 #include "unity-panel-dark-style-tile-private.h"
+#include "unity-panel-network-tile-private.h"
 #include "unity-panel-power-profiles-tile-private.h"
 #include "unity-panel-sheet-page-private.h"
 #include "unity-panel-translucency-tile-private.h"
@@ -69,6 +70,7 @@ unity_panel_quick_settings_page_class_init (UnityPanelQuickSettingsPageClass *kl
   g_type_ensure (UNITY_PANEL_TYPE_BATTERY_ICON);
   g_type_ensure (UNITY_PANEL_TYPE_BLUETOOTH_TILE);
   g_type_ensure (UNITY_PANEL_TYPE_DARK_STYLE_TILE);
+  g_type_ensure (UNITY_PANEL_TYPE_NETWORK_TILE);
   g_type_ensure (UNITY_PANEL_TYPE_POWER_PROFILES_TILE);
   g_type_ensure (UNITY_PANEL_TYPE_TRANSLUCENCY_TILE);
 

@@ -21,6 +21,17 @@ unity-panel button.indicator:checked:hover {
   background-color: alpha(currentColor, 0.32);
 }
 
+unity-panel label.panel-clock,
+unity-panel image.panel-icon {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+unity-panel image.panel-icon {
+  -gtk-icon-size: 16px;
+}
+
 unity-panel-sheet.background {
   background: none;
 }
