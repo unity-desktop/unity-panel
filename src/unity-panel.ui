@@ -30,6 +30,12 @@
                   <object class="UnityPanelBluetoothIcon"/>
                 </child>
                 <child>
+                  <object class="UnityPanelMicrophoneIcon"/>
+                </child>
+                <child>
+                  <object class="UnityPanelSpeakerIcon"/>
+                </child>
+                <child>
                   <object class="UnityPanelPowerProfilesIcon"/>
                 </child>
                 <child>

@@ -84,6 +84,21 @@
                 </child>
               </object>
             </child>
+            <child>
+              <object class="GtkBox">
+                <property name="orientation">vertical</property>
+                <property name="spacing">12</property>
+                <child>
+                  <object class="UnityPanelBrightnessSlider"/>
+                </child>
+                <child>
+                  <object class="UnityPanelSpeakerSlider"/>
+                </child>
+                <child>
+                  <object class="UnityPanelMicrophoneSlider"/>
+                </child>
+              </object>
+            </child>
           </object>
         </child>
         <child>

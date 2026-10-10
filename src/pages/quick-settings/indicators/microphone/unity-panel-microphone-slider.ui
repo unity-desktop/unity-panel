@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="libadwaita" version="1.0"/>
+  <object class="UnityPanelMicrophone" id="model"/>
+  <template class="UnityPanelMicrophoneSlider" parent="AdwBin">
+    <property name="child">
+      <object class="GtkBox">
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkButton" id="button">
+            <property name="valign">center</property>
+            <property name="icon-name" bind-source="model" bind-property="icon-name" bind-flags="sync-create"/>
+            <signal name="clicked" handler="mute_clicked_cb" swapped="true"/>
+          </object>
+        </child>
+        <child>
+          <object class="GtkScale">
+            <property name="hexpand">true</property>
+            <property name="valign">center</property>
+            <property name="draw-value">false</property>
+            <property name="sensitive" bind-source="model" bind-property="mute" bind-flags="sync-create|invert-boolean"/>
+            <property name="adjustment">
+              <object class="GtkAdjustment">
+                <property name="lower">0</property>
+                <property name="upper">1</property>
+                <property name="step-increment">0.05</property>
+                <property name="page-increment">0.1</property>
+                <property name="value" bind-source="model" bind-property="volume" bind-flags="sync-create|bidirectional"/>
+              </object>
+            </property>
+          </object>
+        </child>
+      </object>
+    </property>
+  </template>
+</interface>

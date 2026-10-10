@@ -18,6 +18,8 @@ dep_astalbattery = dependency('astal-battery-0.1')
 dep_astalbluetooth = dependency('astal-bluetooth-0.1')
 dep_astalnetwork = dependency('astal-network-0.1')
 dep_astalpowerprofiles = dependency('astal-power-profiles-0.1')
+dep_astalbrightness = dependency('astal-brightness-0.1')
+dep_astalwp = dependency('astal-wireplumber-0.1')
 dep_unity_platform_components = dependency('unity-platform-components')
 
 cc = meson.get_compiler('c')

@@ -15,6 +15,11 @@
     <file preprocess="xml-stripblanks" alias="unity-panel-battery-icon.ui">pages/quick-settings/indicators/battery/unity-panel-battery-icon.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-bluetooth-icon.ui">pages/quick-settings/indicators/bluetooth/unity-panel-bluetooth-icon.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-bluetooth-tile.ui">pages/quick-settings/indicators/bluetooth/unity-panel-bluetooth-tile.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-brightness-slider.ui">pages/quick-settings/indicators/brightness/unity-panel-brightness-slider.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-microphone-icon.ui">pages/quick-settings/indicators/microphone/unity-panel-microphone-icon.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-microphone-slider.ui">pages/quick-settings/indicators/microphone/unity-panel-microphone-slider.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-speaker-icon.ui">pages/quick-settings/indicators/speaker/unity-panel-speaker-icon.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-speaker-slider.ui">pages/quick-settings/indicators/speaker/unity-panel-speaker-slider.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-dark-style-tile.ui">pages/quick-settings/indicators/dark-style/unity-panel-dark-style-tile.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-network-icon.ui">pages/quick-settings/indicators/network/unity-panel-network-icon.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-network-tile.ui">pages/quick-settings/indicators/network/unity-panel-network-tile.ui</file>

@@ -7,6 +7,8 @@ unity_panel_deps = [
   dep_astalbluetooth,
   dep_astalnetwork,
   dep_astalpowerprofiles,
+  dep_astalbrightness,
+  dep_astalwp,
   dep_unity_platform_components,
 ]
 
@@ -21,9 +23,12 @@ unity_panel_includes = include_directories(
   'pages/quick-settings',
   'pages/quick-settings/indicators/battery',
   'pages/quick-settings/indicators/bluetooth',
+  'pages/quick-settings/indicators/brightness',
   'pages/quick-settings/indicators/dark-style',
+  'pages/quick-settings/indicators/microphone',
   'pages/quick-settings/indicators/network',
   'pages/quick-settings/indicators/power-profiles',
+  'pages/quick-settings/indicators/speaker',
   'pages/quick-settings/indicators/translucency',
 )
 

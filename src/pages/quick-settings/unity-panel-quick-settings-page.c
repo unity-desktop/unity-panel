@@ -9,10 +9,13 @@
 
 #include "unity-panel-battery-icon-private.h"
 #include "unity-panel-bluetooth-tile-private.h"
+#include "unity-panel-brightness-slider-private.h"
 #include "unity-panel-dark-style-tile-private.h"
+#include "unity-panel-microphone-slider-private.h"
 #include "unity-panel-network-tile-private.h"
 #include "unity-panel-power-profiles-tile-private.h"
 #include "unity-panel-sheet-page-private.h"
+#include "unity-panel-speaker-slider-private.h"
 #include "unity-panel-translucency-tile-private.h"
 
 struct _UnityPanelQuickSettingsPage
@@ -69,9 +72,12 @@ unity_panel_quick_settings_page_class_init (UnityPanelQuickSettingsPageClass *kl
 
   g_type_ensure (UNITY_PANEL_TYPE_BATTERY_ICON);
   g_type_ensure (UNITY_PANEL_TYPE_BLUETOOTH_TILE);
+  g_type_ensure (UNITY_PANEL_TYPE_BRIGHTNESS_SLIDER);
   g_type_ensure (UNITY_PANEL_TYPE_DARK_STYLE_TILE);
+  g_type_ensure (UNITY_PANEL_TYPE_MICROPHONE_SLIDER);
   g_type_ensure (UNITY_PANEL_TYPE_NETWORK_TILE);
   g_type_ensure (UNITY_PANEL_TYPE_POWER_PROFILES_TILE);
+  g_type_ensure (UNITY_PANEL_TYPE_SPEAKER_SLIDER);
   g_type_ensure (UNITY_PANEL_TYPE_TRANSLUCENCY_TILE);
 
   gtk_widget_class_set_template_from_resource (widget_class, "/org/unity/panel/unity-panel-quick-settings-page.ui");

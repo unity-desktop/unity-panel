@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="libadwaita" version="1.0"/>
+  <object class="UnityPanelSpeaker" id="model"/>
+  <template class="UnityPanelSpeakerIcon" parent="AdwBin">
+    <property name="visible" bind-source="model" bind-property="present" bind-flags="sync-create"/>
+    <property name="child">
+      <object class="GtkImage">
+        <property name="icon-name" bind-source="model" bind-property="icon-name" bind-flags="sync-create"/>
+        <style>
+          <class name="panel-icon"/>
+        </style>
+      </object>
+    </property>
+  </template>
+</interface>
