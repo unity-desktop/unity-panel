@@ -7,6 +7,7 @@
 
 #include "unity-panel-quick-settings-page-private.h"
 
+#include "unity-panel-power-profiles-tile-private.h"
 #include "unity-panel-sheet-page-private.h"
 
 struct _UnityPanelQuickSettingsPage
@@ -60,6 +61,8 @@ unity_panel_quick_settings_page_class_init (UnityPanelQuickSettingsPageClass *kl
   GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
   object_class->dispose = unity_panel_quick_settings_page_dispose;
+
+  g_type_ensure (UNITY_PANEL_TYPE_POWER_PROFILES_TILE);
 
   gtk_widget_class_set_template_from_resource (widget_class, "/org/unity/panel/unity-panel-quick-settings-page.ui");
   gtk_widget_class_set_css_name (widget_class, "unity-panel-quick-settings-page");

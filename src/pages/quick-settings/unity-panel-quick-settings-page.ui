@@ -13,6 +13,41 @@
             <property name="margin-start">12</property>
             <property name="margin-end">12</property>
             <property name="margin-bottom">12</property>
+            <child>
+              <object class="GtkFlowBox">
+                <property name="min-children-per-line">3</property>
+                <property name="max-children-per-line">3</property>
+                <property name="homogeneous">true</property>
+                <property name="column-spacing">12</property>
+                <property name="row-spacing">12</property>
+                <property name="selection-mode">none</property>
+                <style>
+                  <class name="tiles"/>
+                </style>
+                <child>
+                  <object class="GtkFlowBoxChild">
+                    <property name="focusable">false</property>
+                    <property name="visible" bind-source="power_saver" bind-property="visible" bind-flags="sync-create"/>
+                    <property name="child">
+                      <object class="UnityPanelPowerProfilesTile" id="power_saver">
+                        <property name="profile">power-saver</property>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkFlowBoxChild">
+                    <property name="focusable">false</property>
+                    <property name="visible" bind-source="performance" bind-property="visible" bind-flags="sync-create"/>
+                    <property name="child">
+                      <object class="UnityPanelPowerProfilesTile" id="performance">
+                        <property name="profile">performance</property>
+                      </object>
+                    </property>
+                  </object>
+                </child>
+              </object>
+            </child>
           </object>
         </child>
         <child>

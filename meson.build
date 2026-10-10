@@ -13,6 +13,7 @@ project(
 dep_gtk = dependency('gtk4', version: '>= 4.22')
 dep_adw = dependency('libadwaita-1', version: '>= 1.8')
 dep_gnomedt = dependency('gnome-desktop-4')
+dep_astalpowerprofiles = dependency('astal-power-profiles-0.1')
 dep_unity_platform_components = dependency('unity-platform-components')
 
 cc = meson.get_compiler('c')
@@ -26,4 +27,5 @@ add_project_arguments(
 
 gnome = import('gnome')
 
+subdir('data')
 subdir('src')

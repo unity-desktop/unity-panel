@@ -8,6 +8,7 @@
 #include "unity-panel.h"
 
 #include "unity-panel-calendar-label-private.h"
+#include "unity-panel-power-profiles-icon-private.h"
 #include "unity-panel-sheet-private.h"
 
 struct _UnityPanel
@@ -99,6 +100,7 @@ unity_panel_class_init (UnityPanelClass *klass)
   object_class->dispose = unity_panel_dispose;
 
   g_type_ensure (UNITY_PANEL_TYPE_CALENDAR_LABEL);
+  g_type_ensure (UNITY_PANEL_TYPE_POWER_PROFILES_ICON);
 
   gtk_widget_class_set_template_from_resource (widget_class, "/org/unity/panel/unity-panel.ui");
   gtk_widget_class_bind_template_child (widget_class, UnityPanel, indicator);

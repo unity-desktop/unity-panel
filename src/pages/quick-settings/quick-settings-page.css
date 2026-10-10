@@ -1,0 +1,18 @@
+unity-panel-quick-settings-page flowbox.tiles > flowboxchild {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+}
+
+unity-panel-quick-settings-page button.tile:checked {
+  background-color: var(--accent-bg-color);
+  color: var(--accent-fg-color);
+}
+
+unity-panel-quick-settings-page button.tile:checked:hover {
+  background-color: color-mix(in srgb, var(--accent-bg-color) 90%, var(--accent-fg-color));
+}
+
+unity-panel-quick-settings-page button.tile:checked:active {
+  background-color: color-mix(in srgb, var(--accent-bg-color) 80%, var(--accent-fg-color));
+}

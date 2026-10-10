@@ -2,6 +2,7 @@ unity_panel_deps = [
   dep_gtk,
   dep_adw,
   dep_gnomedt,
+  dep_astalpowerprofiles,
   dep_unity_platform_components,
 ]
 
@@ -10,14 +11,18 @@ unity_panel_headers         = files('unity-panel.h')
 unity_panel_private_sources = files('unity-panel-sheet.c', 'unity-panel-sheet-page.c')
 unity_panel_generated       = []
 
-unity_panel_includes = include_directories('.', 'pages/calendar', 'pages/quick-settings')
+unity_panel_includes = include_directories(
+  '.',
+  'pages/calendar',
+  'pages/quick-settings',
+  'pages/quick-settings/indicators/power-profiles',
+)
 
 subdir('pages')
 
 unity_panel_generated += gnome.compile_resources(
   'unity-panel-resources',
   'unity-panel.gresource.xml',
-  source_dir: ['.', '../data'],
   c_name: 'unity_panel',
 )
 

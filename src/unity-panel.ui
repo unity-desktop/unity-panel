@@ -15,7 +15,15 @@
         <property name="end-widget">
           <object class="GtkToggleButton" id="indicator">
             <property name="child">
-              <object class="UnityPanelCalendarLabel"/>
+              <object class="GtkBox">
+                <property name="spacing">12</property>
+                <child>
+                  <object class="UnityPanelCalendarLabel"/>
+                </child>
+                <child>
+                  <object class="UnityPanelPowerProfilesIcon"/>
+                </child>
+              </object>
             </property>
             <signal name="notify::active" handler="indicator_active_cb" swapped="true"/>
             <style>
