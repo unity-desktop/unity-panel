@@ -23,6 +23,9 @@
                 <child>
                   <object class="UnityPanelPowerProfilesIcon"/>
                 </child>
+                <child>
+                  <object class="UnityPanelBatteryIcon"/>
+                </child>
               </object>
             </property>
             <signal name="notify::active" handler="indicator_active_cb" swapped="true"/>

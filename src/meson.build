@@ -2,6 +2,8 @@ unity_panel_deps = [
   dep_gtk,
   dep_adw,
   dep_gnomedt,
+  dep_desktop_schemas,
+  dep_astalbattery,
   dep_astalpowerprofiles,
   dep_unity_platform_components,
 ]
@@ -15,7 +17,10 @@ unity_panel_includes = include_directories(
   '.',
   'pages/calendar',
   'pages/quick-settings',
+  'pages/quick-settings/indicators/battery',
+  'pages/quick-settings/indicators/dark-style',
   'pages/quick-settings/indicators/power-profiles',
+  'pages/quick-settings/indicators/translucency',
 )
 
 subdir('pages')

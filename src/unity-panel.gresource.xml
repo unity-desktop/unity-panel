@@ -12,6 +12,9 @@
     <file preprocess="xml-stripblanks" alias="unity-panel-calendar-toggle.ui">pages/calendar/unity-panel-calendar-toggle.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-quick-settings-page.ui">pages/quick-settings/unity-panel-quick-settings-page.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-quick-settings-toggle.ui">pages/quick-settings/unity-panel-quick-settings-toggle.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-battery-icon.ui">pages/quick-settings/indicators/battery/unity-panel-battery-icon.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-dark-style-tile.ui">pages/quick-settings/indicators/dark-style/unity-panel-dark-style-tile.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-translucency-tile.ui">pages/quick-settings/indicators/translucency/unity-panel-translucency-tile.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-power-profiles-icon.ui">pages/quick-settings/indicators/power-profiles/unity-panel-power-profiles-icon.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-power-profiles-tile.ui">pages/quick-settings/indicators/power-profiles/unity-panel-power-profiles-tile.ui</file>
   </gresource>

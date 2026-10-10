@@ -27,6 +27,24 @@
                 <child>
                   <object class="GtkFlowBoxChild">
                     <property name="focusable">false</property>
+                    <property name="visible" bind-source="dark_style" bind-property="visible" bind-flags="sync-create"/>
+                    <property name="child">
+                      <object class="UnityPanelDarkStyleTile" id="dark_style"/>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkFlowBoxChild">
+                    <property name="focusable">false</property>
+                    <property name="visible" bind-source="translucency" bind-property="visible" bind-flags="sync-create"/>
+                    <property name="child">
+                      <object class="UnityPanelTranslucencyTile" id="translucency"/>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkFlowBoxChild">
+                    <property name="focusable">false</property>
                     <property name="visible" bind-source="power_saver" bind-property="visible" bind-flags="sync-create"/>
                     <property name="child">
                       <object class="UnityPanelPowerProfilesTile" id="power_saver">
