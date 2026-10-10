@@ -10,6 +10,7 @@
 #include "unity-panel-battery-icon-private.h"
 #include "unity-panel-bluetooth-icon-private.h"
 #include "unity-panel-calendar-label-private.h"
+#include "unity-panel-network-icon-private.h"
 #include "unity-panel-power-profiles-icon-private.h"
 #include "unity-panel-sheet-private.h"
 
@@ -104,6 +105,7 @@ unity_panel_class_init (UnityPanelClass *klass)
   g_type_ensure (UNITY_PANEL_TYPE_BATTERY_ICON);
   g_type_ensure (UNITY_PANEL_TYPE_BLUETOOTH_ICON);
   g_type_ensure (UNITY_PANEL_TYPE_CALENDAR_LABEL);
+  g_type_ensure (UNITY_PANEL_TYPE_NETWORK_ICON);
   g_type_ensure (UNITY_PANEL_TYPE_POWER_PROFILES_ICON);
 
   gtk_widget_class_set_template_from_resource (widget_class, "/org/unity/panel/unity-panel.ui");

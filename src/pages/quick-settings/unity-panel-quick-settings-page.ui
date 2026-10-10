@@ -27,6 +27,15 @@
                 <child>
                   <object class="GtkFlowBoxChild">
                     <property name="focusable">false</property>
+                    <property name="visible" bind-source="network" bind-property="visible" bind-flags="sync-create"/>
+                    <property name="child">
+                      <object class="UnityPanelNetworkTile" id="network"/>
+                    </property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkFlowBoxChild">
+                    <property name="focusable">false</property>
                     <property name="visible" bind-source="bluetooth" bind-property="visible" bind-flags="sync-create"/>
                     <property name="child">
                       <object class="UnityPanelBluetoothTile" id="bluetooth"/>

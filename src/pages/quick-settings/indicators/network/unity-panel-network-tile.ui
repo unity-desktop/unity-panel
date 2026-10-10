@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <object class="UnityPanelNetwork" id="network"/>
+  <template class="UnityPanelNetworkTile" parent="GtkToggleButton">
+    <property name="visible" bind-source="network" bind-property="present" bind-flags="sync-create"/>
+    <property name="sensitive" bind-source="network" bind-property="has-wifi" bind-flags="sync-create"/>
+    <property name="active" bind-source="network" bind-property="wifi-enabled" bind-flags="sync-create|bidirectional"/>
+    <property name="child">
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <property name="spacing">18</property>
+        <property name="margin-top">6</property>
+        <child>
+          <object class="GtkImage">
+            <property name="halign">start</property>
+            <property name="icon-name" bind-source="network" bind-property="icon-name" bind-flags="sync-create"/>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="xalign">0</property>
+                <property name="ellipsize">end</property>
+                <property name="max-width-chars">10</property>
+                <property name="label" translatable="yes">Network</property>
+                <style>
+                  <class name="caption-heading"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel">
+                <property name="xalign">0</property>
+                <property name="ellipsize">end</property>
+                <property name="max-width-chars">10</property>
+                <property name="label" bind-source="network" bind-property="subtitle" bind-flags="sync-create"/>
+                <style>
+                  <class name="caption"/>
+                  <class name="dimmed"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </property>
+    <style>
+      <class name="tile"/>
+    </style>
+  </template>
+</interface>

@@ -21,6 +21,9 @@
                   <object class="UnityPanelCalendarLabel"/>
                 </child>
                 <child>
+                  <object class="UnityPanelNetworkIcon"/>
+                </child>
+                <child>
                   <object class="UnityPanelBluetoothIcon"/>
                 </child>
                 <child>

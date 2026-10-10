@@ -16,6 +16,8 @@
     <file preprocess="xml-stripblanks" alias="unity-panel-bluetooth-icon.ui">pages/quick-settings/indicators/bluetooth/unity-panel-bluetooth-icon.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-bluetooth-tile.ui">pages/quick-settings/indicators/bluetooth/unity-panel-bluetooth-tile.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-dark-style-tile.ui">pages/quick-settings/indicators/dark-style/unity-panel-dark-style-tile.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-network-icon.ui">pages/quick-settings/indicators/network/unity-panel-network-icon.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-network-tile.ui">pages/quick-settings/indicators/network/unity-panel-network-tile.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-translucency-tile.ui">pages/quick-settings/indicators/translucency/unity-panel-translucency-tile.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-power-profiles-icon.ui">pages/quick-settings/indicators/power-profiles/unity-panel-power-profiles-icon.ui</file>
     <file preprocess="xml-stripblanks" alias="unity-panel-power-profiles-tile.ui">pages/quick-settings/indicators/power-profiles/unity-panel-power-profiles-tile.ui</file>
