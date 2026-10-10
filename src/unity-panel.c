@@ -8,6 +8,7 @@
 #include "unity-panel.h"
 
 #include "unity-panel-battery-icon-private.h"
+#include "unity-panel-bluetooth-icon-private.h"
 #include "unity-panel-calendar-label-private.h"
 #include "unity-panel-power-profiles-icon-private.h"
 #include "unity-panel-sheet-private.h"
@@ -101,6 +102,7 @@ unity_panel_class_init (UnityPanelClass *klass)
   object_class->dispose = unity_panel_dispose;
 
   g_type_ensure (UNITY_PANEL_TYPE_BATTERY_ICON);
+  g_type_ensure (UNITY_PANEL_TYPE_BLUETOOTH_ICON);
   g_type_ensure (UNITY_PANEL_TYPE_CALENDAR_LABEL);
   g_type_ensure (UNITY_PANEL_TYPE_POWER_PROFILES_ICON);
 

@@ -1,4 +1,5 @@
 subdir('battery')
+subdir('bluetooth')
 subdir('dark-style')
 subdir('power-profiles')
 subdir('translucency')

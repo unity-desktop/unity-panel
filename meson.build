@@ -15,6 +15,7 @@ dep_adw = dependency('libadwaita-1', version: '>= 1.8')
 dep_gnomedt = dependency('gnome-desktop-4')
 dep_desktop_schemas = dependency('gsettings-desktop-schemas')
 dep_astalbattery = dependency('astal-battery-0.1')
+dep_astalbluetooth = dependency('astal-bluetooth-0.1')
 dep_astalpowerprofiles = dependency('astal-power-profiles-0.1')
 dep_unity_platform_components = dependency('unity-platform-components')
 
