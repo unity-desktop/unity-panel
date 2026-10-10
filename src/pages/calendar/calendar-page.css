@@ -1,0 +1,55 @@
+unity-panel-calendar-page calendar.view {
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+unity-panel-calendar-page calendar.view > header {
+  border-bottom: none;
+}
+
+unity-panel-calendar-page calendar.view > header > button {
+  border-radius: 9px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+unity-panel-calendar-page calendar.view > header > button:hover {
+  background-color: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+unity-panel-calendar-page calendar.view > header > button:active {
+  background-color: color-mix(in srgb, currentColor 20%, transparent);
+}
+
+unity-panel-calendar-page calendar.view > grid {
+  padding: 0;
+}
+
+unity-panel-calendar-page calendar.view > grid > label {
+  margin: 6px;
+}
+
+unity-panel-calendar-page calendar.view label.day-number {
+  min-width: 28px;
+  min-height: 28px;
+  padding: 0;
+}
+
+unity-panel-calendar-page calendar.view label.day-number:selected {
+  background: alpha(currentColor, 0.1);
+  color: inherit;
+}
+
+unity-panel-calendar-page calendar.view label.day-number.today {
+  background: radial-gradient(circle closest-side, var(--accent-bg-color) 96%, transparent 100%);
+  color: var(--accent-fg-color);
+  box-shadow: none;
+}
+
+unity-panel-calendar-page calendar.view label.day-name,
+unity-panel-calendar-page calendar.view label.week-number {
+  font-weight: 700;
+  font-size: 82%;
+}

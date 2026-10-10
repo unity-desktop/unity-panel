@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="libadwaita" version="1.0"/>
+  <template class="UnityPanelCalendarLabel" parent="AdwBin">
+    <property name="child">
+      <object class="GtkLabel" id="label">
+        <style>
+          <class name="body"/>
+        </style>
+      </object>
+    </property>
+  </template>
+</interface>
