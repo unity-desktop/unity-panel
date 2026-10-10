@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="libadwaita" version="1.0"/>
+  <object class="AdwToggle" id="toggle">
+    <property name="name">quick-settings</property>
+    <property name="icon-name">org.unity.panel.quick-settings-symbolic</property>
+    <property name="tooltip" translatable="yes">Quick Settings</property>
+  </object>
+</interface>
