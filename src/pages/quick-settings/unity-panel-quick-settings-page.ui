@@ -51,7 +51,16 @@
           </object>
         </child>
         <child>
-          <object class="GtkActionBar"/>
+          <object class="GtkActionBar">
+            <child type="start">
+              <object class="GtkButton">
+                <property name="visible" bind-source="battery" bind-property="visible" bind-flags="sync-create"/>
+                <property name="child">
+                  <object class="UnityPanelBatteryIcon" id="battery"/>
+                </property>
+              </object>
+            </child>
+          </object>
         </child>
       </object>
     </property>
