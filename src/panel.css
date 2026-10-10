@@ -1,0 +1,30 @@
+unity-panel button.indicator {
+  min-width: 16px;
+  min-height: 16px;
+  margin: 4px 0;
+  padding: 1px 8px;
+  border-radius: 9999px;
+  transition-duration: 150ms;
+}
+
+unity-panel button.indicator:hover,
+unity-panel button.indicator:focus-visible {
+  background-color: alpha(currentColor, 0.2);
+}
+
+unity-panel button.indicator:active,
+unity-panel button.indicator:checked {
+  background-color: alpha(currentColor, 0.3);
+}
+
+unity-panel button.indicator:checked:hover {
+  background-color: alpha(currentColor, 0.32);
+}
+
+unity-panel-sheet.background {
+  background: none;
+}
+
+unity-panel-sheet edge-sheet > dimming {
+  background: none;
+}

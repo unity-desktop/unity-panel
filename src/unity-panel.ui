@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="UnityPanel" parent="UnityStrip">
+    <property name="namespace">unity-panel</property>
+    <property name="stylesheet">/org/unity/panel/panel.css</property>
+    <property name="anchor">top|left|right</property>
+    <property name="layer">top</property>
+    <property name="exclusivity">exclusive</property>
+    <property name="keymode">none</property>
+    <property name="content">
+      <object class="GtkCenterBox">
+        <property name="margin-start">6</property>
+        <property name="margin-end">6</property>
+        <property name="end-widget">
+          <object class="GtkToggleButton" id="indicator">
+            <property name="child">
+              <object class="UnityPanelCalendarLabel"/>
+            </property>
+            <signal name="notify::active" handler="indicator_active_cb" swapped="true"/>
+            <style>
+              <class name="flat"/>
+              <class name="indicator"/>
+            </style>
+          </object>
+        </property>
+      </object>
+    </property>
+  </template>
+</interface>

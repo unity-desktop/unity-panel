@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/unity/panel">
+    <file>style.css</file>
+    <file>panel.css</file>
+    <file alias="calendar-page.css">pages/calendar/calendar-page.css</file>
+    <file preprocess="xml-stripblanks">unity-panel.ui</file>
+    <file preprocess="xml-stripblanks">unity-panel-sheet.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-calendar-label.ui">pages/calendar/unity-panel-calendar-label.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-calendar-page.ui">pages/calendar/unity-panel-calendar-page.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-calendar-toggle.ui">pages/calendar/unity-panel-calendar-toggle.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-quick-settings-page.ui">pages/quick-settings/unity-panel-quick-settings-page.ui</file>
+    <file preprocess="xml-stripblanks" alias="unity-panel-quick-settings-toggle.ui">pages/quick-settings/unity-panel-quick-settings-toggle.ui</file>
+  </gresource>
+</gresources>
